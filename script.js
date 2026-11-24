@@ -1,9 +1,5 @@
 
 function openInvitation() {
-    alert("Welcome to our wedding! ❤️");
-}
-
-function openInvitation() {
 
     document.getElementById("cover").style.display = "none";
 
@@ -11,11 +7,19 @@ function openInvitation() {
 
     window.scrollTo(0, 0);
 
+    // Play wedding music
+    const music = document.getElementById("weddingMusic");
+
+    music.play().catch(error => {
+        console.log("Music could not play:", error);
+    });
+
 }
+
 
 // WEDDING COUNTDOWN
 
-const weddingDate = new Date("2026-12-20T12:00:00+08:00").getTime();
+const weddingDate = new Date("2027-01-09T12:00:00+08:00").getTime();
 
 function updateCountdown() {
 
