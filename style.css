@@ -1,0 +1,452 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #F5EFE6;
+    color: #66543F;
+}
+
+/* OPENING COVER */
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+
+    background:
+        linear-gradient(
+            rgba(245, 239, 230, 0.83),
+            rgba(245, 239, 230, 0.83)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1200");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* SMALL HEADING */
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #A58A59;
+    margin-bottom: 25px;
+}
+
+/* COUPLE NAMES */
+
+h1 {
+    font-size: clamp(42px, 8vw, 65px);
+    font-weight: normal;
+    color: #806B49;
+    margin-bottom: 20px;
+}
+
+/* GOLD DECORATION */
+
+.gold-line {
+    width: 90px;
+    height: 1px;
+    background: #B89B62;
+    margin: 20px auto;
+}
+
+/* DATE */
+
+.wedding-date {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #806B49;
+    margin: 20px 0;
+}
+
+/* INVITATION TEXT */
+
+.invitation-text {
+    font-size: 15px;
+    line-height: 2;
+    max-width: 320px;
+    margin: 20px auto 35px;
+}
+
+/* BUTTON */
+
+button {
+    padding: 15px 35px;
+    border: 1px solid #B89B62;
+    background: #B89B62;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: transparent;
+    color: #806B49;
+}
+
+/* FOOTER */
+
+.footer-text {
+    margin-top: 45px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #A58A59;
+}
+
+/* MAIN WEDDING PAGE */
+
+.main-page {
+    display: none;
+    min-height: 100vh;
+    padding: 70px 20px;
+    text-align: center;
+    background: #F5EFE6;
+}
+
+/* MAIN HEADING */
+
+.main-page h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #A58A59;
+    margin: 25px 0;
+}
+
+/* COUPLE NAMES */
+
+.main-page h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.and {
+    font-size: 25px;
+    color: #B89B62;
+}
+
+/* WEDDING DETAILS */
+
+.details {
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    border: 1px solid #B89B62;
+    background: #F9F5EF;
+    line-height: 2.3;
+}
+
+.details h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #A58A59;
+    margin-bottom: 15px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .main-page {
+        padding: 55px 18px;
+    }
+
+    .main-page h1 {
+        font-size: 42px;
+    }
+
+    .details {
+        padding: 25px 15px;
+    }
+
+}
+
+/* COUNTDOWN SECTION */
+
+.countdown-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.countdown-section h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #806B49;
+    margin-bottom: 35px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background: #E9DFD0;
+    border: 1px solid #C4AA7A;
+    width: 105px;
+    padding: 20px 8px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 32px;
+    color: #806B49;
+}
+
+.time-box p {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: #A58A59;
+}
+
+.countdown-message {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 30px;
+    color: #927D61;
+}
+
+/* MOBILE COUNTDOWN */
+
+@media (max-width: 480px) {
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .time-box {
+        width: 75px;
+        padding: 15px 5px;
+    }
+
+    .time-box span {
+        font-size: 25px;
+    }
+
+}
+
+/* WEDDING ITINERARY */
+
+.itinerary {
+    background: #EEE5D8;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.itinerary h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #806B49;
+    margin: 15px 0;
+}
+
+.itinerary-subtitle {
+    font-size: 14px;
+    font-style: italic;
+    color: #927D61;
+    margin-bottom: 50px;
+}
+
+/* TIMELINE */
+
+.timeline {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    border-left: 1px solid #B89B62;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #B89B62;
+}
+
+.timeline-time {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #A58A59;
+}
+
+.timeline-content h3 {
+    font-size: 19px;
+    font-weight: normal;
+    color: #66543F;
+    margin: 10px 0;
+}
+
+.timeline-content p {
+    font-size: 13px;
+    color: #927D61;
+    line-height: 1.8;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* WEDDING LOCATION */
+
+.location-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #F9F5EF;
+}
+
+.location-section h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #806B49;
+    margin: 20px 0;
+}
+
+.location-section h3 {
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #806B49;
+    margin: 30px 0 15px;
+}
+
+.venue-address {
+    font-size: 14px;
+    color: #927D61;
+}
+
+.location-message {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 30px auto;
+}
+
+.location-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.location-buttons a {
+    text-decoration: none;
+    padding: 14px 22px;
+    background: #B89B62;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #B89B62;
+    transition: 0.3s;
+}
+
+.location-buttons a:hover {
+    background: transparent;
+    color: #806B49;
+}
+
+/* RSVP SECTION */
+
+.rsvp-section {
+    background: #EEE5D8;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.rsvp-section h2 {
+    font-size: 38px;
+    font-weight: normal;
+    color: #806B49;
+    margin: 20px 0;
+}
+
+.rsvp-description {
+    max-width: 350px;
+    margin: 0 auto 35px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #927D61;
+}
+
+/* FORM CONTAINER */
+
+#rsvpForm {
+    max-width: 430px;
+    margin: auto;
+    padding: 35px 25px;
+    background: #F9F5EF;
+    border: 1px solid #C4AA7A;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #806B49;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D6C8B2;
+    background: #FFFEFC;
+    color: #66543F;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #B89B62;
+}
+
+#rsvpForm button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.rsvp-footer {
+    margin-top: 30px;
+    font-size: 13px;
+    font-style: italic;
+    color: #927D61;
+}
+

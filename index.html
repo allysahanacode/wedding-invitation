@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam & Sarah | Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPENING COVER -->
+    <section class="cover" id="cover">
+
+        <p class="small-title">THE WEDDING OF</p>
+
+        <h1>Adam & Sarah</h1>
+
+        <div class="gold-line"></div>
+
+        <p class="wedding-date">20 DECEMBER 2026</p>
+
+        <p class="invitation-text">
+            Together with our families,
+            we invite you to celebrate
+            our special day.
+        </p>
+
+        <button onclick="openInvitation()">
+            OPEN INVITATION
+        </button>
+
+        <p class="footer-text">WITH LOVE AND JOY</p>
+
+    </section>
+
+
+    <!-- MAIN WEDDING PAGE -->
+    <section class="main-page" id="mainPage">
+
+        <p class="small-title">ASSALAMUALAIKUM & GREETINGS</p>
+
+        <h2>You're Invited!</h2>
+
+        <p class="invitation-text">
+            With the blessings of our families,
+            we joyfully invite you to celebrate
+            our wedding.
+        </p>
+
+        <div class="gold-line"></div>
+
+        <h1>Adam</h1>
+        <p class="and">&</p>
+        <h1>Sarah</h1>
+
+        <p class="wedding-date">
+            SUNDAY, 20 DECEMBER 2026
+        </p>
+
+        <div class="details">
+            <h3>THE WEDDING RECEPTION</h3>
+
+            <p>12:00 PM – 4:00 PM</p>
+
+            <p>Grand Ballroom</p>
+
+            <p>Kuala Lumpur, Malaysia</p>
+        </div>
+
+<!-- COUNTDOWN SECTION -->
+
+<div class="countdown-section">
+
+    <h2>Counting Down To Our Special Day</h2>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="days">00</span>
+            <p>DAYS</p>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <p>HOURS</p>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <p>MINUTES</p>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <p>SECONDS</p>
+        </div>
+
+    </div>
+
+    <p class="countdown-message">
+        Every moment brings us closer together.
+    </p>
+
+</div>
+
+<!-- WEDDING ITINERARY -->
+
+<section class="itinerary">
+
+    <p class="small-title">SAVE THE DATE</p>
+
+    <h2>Wedding Itinerary</h2>
+
+    <p class="itinerary-subtitle">
+        A day filled with love and happiness
+    </p>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <span class="timeline-time">12:00 PM</span>
+            <div class="timeline-content">
+                <h3>Guest Arrival</h3>
+                <p>Welcome our lovely guests.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-time">12:30 PM</span>
+            <div class="timeline-content">
+                <h3>Wedding Ceremony</h3>
+                <p>Celebrating the union of Adam & Sarah.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-time">1:00 PM</span>
+            <div class="timeline-content">
+                <h3>Wedding Reception</h3>
+                <p>Enjoy a wonderful meal together.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-time">2:00 PM</span>
+            <div class="timeline-content">
+                <h3>Photography Session</h3>
+                <p>Capture beautiful memories.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-time">4:00 PM</span>
+            <div class="timeline-content">
+                <h3>End of Reception</h3>
+                <p>Thank you for celebrating with us!</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+        <p class="footer-text">
+            WE CAN'T WAIT TO CELEBRATE WITH YOU
+        </p>
+
+    </section>
+
+<!-- WEDDING LOCATION -->
+
+<section class="location-section">
+
+    <p class="small-title">JOIN US HERE</p>
+
+    <h2>Our Wedding Venue</h2>
+
+    <div class="gold-line"></div>
+
+    <h3>GRAND BALLROOM</h3>
+
+    <p class="venue-address">
+        Kuala Lumpur, Malaysia
+    </p>
+
+    <p class="location-message">
+        We look forward to celebrating
+        this special day with you.
+    </p>
+
+    <div class="location-buttons">
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Grand+Ballroom+Kuala+Lumpur"
+           target="_blank">
+            GOOGLE MAPS
+        </a>
+
+        <a href="https://www.waze.com/ul?q=Grand%20Ballroom%20Kuala%20Lumpur&navigate=yes"
+           target="_blank">
+            WAZE
+        </a>
+
+    </div>
+
+</section>
+
+<!-- RSVP SECTION -->
+
+<section class="rsvp-section">
+
+    <p class="small-title">KINDLY RESPOND</p>
+
+    <h2>RSVP</h2>
+
+    <p class="rsvp-description">
+        We would be delighted to have you
+        celebrate our special day with us.
+        Kindly confirm your attendance below.
+    </p>
+
+    <form id="rsvpForm">
+
+        <div class="form-group">
+            <label for="guestName">Full Name</label>
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Enter your name"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="guestPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="guestPhone"
+                placeholder="Enter your phone number"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="attendance">Will you attend?</label>
+
+            <select id="attendance" required>
+                <option value="">Select your response</option>
+                <option value="Yes">Joyfully Accept</option>
+                <option value="No">Regretfully Decline</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="guestCount">
+                Number of Guests
+            </label>
+
+            <select id="guestCount" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+            </select>
+        </div>
+
+        <button type="submit">
+            SUBMIT RSVP
+        </button>
+
+    </form>
+
+    <p class="rsvp-footer">
+        Thank you for your response!
+    </p>
+
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
